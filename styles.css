@@ -4,9 +4,11 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/background-image.jpg") center center fixed;
-  background-size: cover;
+  background-size: cover; */
+
+  background: radial-gradient(circle at top, #030630, #33031b 60%);
 }
 
 h1,
@@ -94,7 +96,7 @@ p {
   box-sizing: border-box;
   height: 100%;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.308);
   position: relative;
   width: 200px;
   text-align: center;
@@ -119,7 +121,7 @@ p {
 #sidebar a {
   display: block;
   padding: 8px 0;
-  color: #d482c0;
+  color: hsl(313, 100%, 81%);
   text-decoration: none;
   transition: color 0.3s;
   width: 100%;
