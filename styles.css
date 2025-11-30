@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  min-height: 100dvh;
+  min-height: 100vh;
   height: auto;
 }
 
@@ -14,11 +14,11 @@ body {
     url("img/background-image.jpg") center center fixed;
   background-size: cover; */
 
-   background-color: #000;
+  background-color: #000;
   background-image: radial-gradient(circle at top, #030630, #33031b 60%);
   background-repeat: no-repeat;
   background-size: 100% 150%;
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 h1,
@@ -86,6 +86,7 @@ p {
   display: flex;
   min-height: 100vh;
   gap: 10px;
+  align-items: stretch;
 }
 
 #main-content > p {
@@ -111,6 +112,7 @@ p {
   width: 200px;
   text-align: center;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -326,35 +328,34 @@ img:hover {
 }
 
 @media (max-width: 768px) {
-  body {
-    background-size: 100% 100%;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+  #main {
+    flex-direction: row;
+    gap: 10px;
+    align-items: stretch;
   }
 
   #navigation {
-    width: 150px;
+    width: 25%;
+  }
 
   #sidebar {
-    width: 150px;
+    width: 100%;
+    max-height: none;
     padding: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: visible;
   }
 
   #main-content {
-    width: calc(100% - 150px);
+    width: 75%;
     padding: 15px;
   }
 
-  body, html {
+  body,
+  html {
     overflow-x: hidden;
   }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
 }
 
 @media (min-width: 700px) {
@@ -367,4 +368,3 @@ img:hover {
     object-fit: contain;
   }
 }
-
