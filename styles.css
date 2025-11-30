@@ -15,9 +15,10 @@ body {
   background-size: cover; */
 
   background-color: #000;
-  background: radial-gradient(circle at top, #030630, #33031b 60%);
+  background-image: radial-gradient(circle at top, #030630, #33031b 60%);
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
   min-height: 100dvh;
-  height: auto;
 }
 
 h1,
@@ -343,3 +344,4 @@ img:hover {
     object-fit: contain;
   }
 }
+
