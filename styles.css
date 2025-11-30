@@ -324,14 +324,14 @@ img:hover {
   }
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   body {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
-}
+}*/
 
 @media (min-width: 700px) {
   .moon-gallery {
@@ -343,5 +343,6 @@ img:hover {
     object-fit: contain;
   }
 }
+
 
 
