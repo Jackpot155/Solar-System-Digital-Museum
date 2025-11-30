@@ -14,10 +14,10 @@ body {
     url("img/background-image.jpg") center center fixed;
   background-size: cover; */
 
-   background-color: #000; /* solid fallback always fills the whole page */
+   background-color: #000;
   background-image: radial-gradient(circle at top, #030630, #33031b 60%);
   background-repeat: no-repeat;
-  background-size: 100% 150%; /* extends the gradient down */
+  background-size: 100% 150%;
   min-height: 100dvh;
 }
 
@@ -367,3 +367,4 @@ img:hover {
     object-fit: contain;
   }
 }
+
