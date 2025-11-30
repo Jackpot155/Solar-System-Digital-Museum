@@ -4,6 +4,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   min-height: 100dvh;
   height: auto;
 }
@@ -13,10 +14,10 @@ body {
     url("img/background-image.jpg") center center fixed;
   background-size: cover; */
 
-
+   background-color: #000; /* solid fallback always fills the whole page */
   background-image: radial-gradient(circle at top, #030630, #33031b 60%);
   background-repeat: no-repeat;
-  background-size: 100% 150%;
+  background-size: 100% 150%; /* extends the gradient down */
   min-height: 100dvh;
 }
 
@@ -326,11 +327,34 @@ img:hover {
 
 @media (max-width: 768px) {
   body {
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
+
+  #navigation {
+    width: 150px;
+
+  #sidebar {
+    width: 150px;
+    padding: 10px;
+  }
+
+  #main-content {
+    width: calc(100% - 150px);
+    padding: 15px;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 }
 
 @media (min-width: 700px) {
@@ -343,7 +367,3 @@ img:hover {
     object-fit: contain;
   }
 }
-
-
-
-
