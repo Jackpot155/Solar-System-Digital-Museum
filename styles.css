@@ -4,7 +4,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   min-height: 100dvh;
   height: auto;
 }
@@ -344,4 +343,5 @@ img:hover {
     object-fit: contain;
   }
 }
+
 
