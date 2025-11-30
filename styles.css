@@ -13,7 +13,7 @@ body {
     url("img/background-image.jpg") center center fixed;
   background-size: cover; */
 
-  background-color: #000;
+
   background-image: radial-gradient(circle at top, #030630, #33031b 60%);
   background-repeat: no-repeat;
   background-size: 100% 150%;
@@ -324,14 +324,14 @@ img:hover {
   }
 }
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
-}*/
+}
 
 @media (min-width: 700px) {
   .moon-gallery {
@@ -343,6 +343,7 @@ img:hover {
     object-fit: contain;
   }
 }
+
 
 
 
